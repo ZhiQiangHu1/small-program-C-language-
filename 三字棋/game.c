@@ -70,7 +70,15 @@ void ComputerMove(char board[ROW][COL],int row,int col)
 {
 	int x=0;
 	int y=0;
-printf("电脑走：>");
+printf("电脑走：>\n");
+	while(1){
 	x=rand()%row;
 	y=rand()%col;
+	if(board[x][y]==' '){
+            board[x][y]='#';
+	break;
+	}	
+	}
+	
+		
 }
