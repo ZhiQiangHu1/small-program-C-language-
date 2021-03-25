@@ -53,6 +53,7 @@ printf("玩家走：>\n");
 		if(board[x-1][y-1]==' ')
 		{
 		board[x-1][y-1]='*';
+			break;
 		}
 		else{
 		printf("该坐标被占用\n");
