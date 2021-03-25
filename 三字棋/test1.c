@@ -31,6 +31,7 @@ void game()
 void test()
 {
 	int input = 0;
+	srand((unsigned int)time (NULL));
 	do {
 		menu ();
 		printf("请选择:>");
