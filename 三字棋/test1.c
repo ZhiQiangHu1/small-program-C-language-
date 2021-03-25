@@ -21,6 +21,9 @@ void game()
 	{
 	//玩家先下棋
 		playermove(board,ROW,COL);
+		DisplayBoard(board,ROW,COL);
+		//电脑下棋
+		
 	}
 
 }
