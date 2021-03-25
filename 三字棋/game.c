@@ -66,3 +66,11 @@ printf("玩家走：>\n");
 		
 		
 }
+void ComputerMove(char board[ROW][COL],int row,int col)
+{
+	int x=0;
+	int y=0;
+printf("电脑走：>");
+	x=rand()%row;
+	y=rand()%col;
+}
