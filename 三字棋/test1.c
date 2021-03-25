@@ -1,4 +1,4 @@
-//²âÊÔÈı×ÖÆåÓÎÏ·
+//æµ‹è¯•ä¸‰å­—æ£‹æ¸¸æˆ
 #include <stdio.h>
 #include"game.h"
 void menu()
@@ -7,15 +7,21 @@ void menu()
 	printf("**** 1.play   0.exit********************\n");
 	printf("****************************************\n");
 }
-//ÓÎÏ·µÄÕû¸öÊµÏÖ
+//æ¸¸æˆçš„æ•´ä¸ªå®ç°
 void game()
 {
-  //´´½¨Ò»¸öÊı×é£¬´æ·Å×ß³öµÄÆåÅÌĞÅÏ¢
-	char board[ROW][COL] = {0};//È«²¿Îª¿Õ¸ñ
-	//³õÊ¼»¯ÆåÅÌ
+  //åˆ›å»ºä¸€ä¸ªæ•°ç»„ï¼Œå­˜æ”¾èµ°å‡ºçš„æ£‹ç›˜ä¿¡æ¯
+	char board[ROW][COL] = {0};//å…¨éƒ¨ä¸ºç©ºæ ¼
+	//åˆå§‹åŒ–æ£‹ç›˜
 	InitBoard(board, ROW, COL);
-	//´òÓ¡ÆåÅÌ
+	//æ‰“å°æ£‹ç›˜
 	DisplayBoard(board,ROW,COL);
+	// ä¸‹æ£‹
+	while(1)
+	{
+	//ç©å®¶å…ˆä¸‹æ£‹
+		playermove(board,ROW,COL);
+	}
 
 }
 void test()
@@ -23,7 +29,7 @@ void test()
 	int input = 0;
 	do {
 		menu ();
-		printf("ÇëÑ¡Ôñ:>");
+		printf("è¯·é€‰æ‹©:>");
 		scanf_s("%d", &input);
 		switch (input)
 		{
@@ -31,10 +37,10 @@ void test()
 			game();
 			break;
 		case 0:
-			printf("ÍË³öÓÎÏ·\n");
+			printf("é€€å‡ºæ¸¸æˆ\n");
 			break;
 		default:
-			printf("Ñ¡Ôñ´íÎó£¬ÇëÖØĞÂÑ¡Ôñ\n");
+			printf("é€‰æ‹©é”™è¯¯ï¼Œè¯·é‡æ–°é€‰æ‹©\n");
 			break;
 		}
 	} while (input);
