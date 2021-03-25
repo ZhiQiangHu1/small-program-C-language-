@@ -23,7 +23,8 @@ void game()
 		playermove(board,ROW,COL);
 		DisplayBoard(board,ROW,COL);
 		//电脑下棋
-		
+		ComputerMove(board,ROW,COL);
+		DisplayBoard(board,ROW,COL);
 	}
 
 }
