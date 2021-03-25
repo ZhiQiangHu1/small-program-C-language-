@@ -5,3 +5,4 @@
 void InitBoard(char board[ROW][COL], int row, int col);
 void DisplayBoard(char board[ROW][COL],int row,int col);
 void playermove(char board[ROW][COL],int row,int col);
+ComputerMove(char board[ROW][COL],int row,int col);
