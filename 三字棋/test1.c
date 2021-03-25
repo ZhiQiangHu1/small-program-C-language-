@@ -22,9 +22,14 @@ void game()
 	//玩家先下棋
 		playermove(board,ROW,COL);
 		DisplayBoard(board,ROW,COL);
+		//判断玩家是否赢
+		IsWin();
 		//电脑下棋
 		ComputerMove(board,ROW,COL);
 		DisplayBoard(board,ROW,COL);
+		//判断电脑是否赢
+		IsWin();
+		
 	}
 
 }
